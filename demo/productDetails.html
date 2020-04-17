@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="./jquery-2.1.1.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="./dist/idangerous.swiper.css">
+    <script src="./jquery-2.1.1.min.js"></script>
+    <script src="./dist/idangerous.swiper.js"></script>
+    <link rel="stylesheet" href="./productDetails.css">
+    <link rel="stylesheet" href="../demo/dist/photoswipe.css">
+    <link rel="stylesheet" href="../demo/dist/default-skin.css">
+    <!-- <link rel="stylesheet" href="../demo/dist/side.css"> -->
+    <script src="../demo/dist/photoswipe-ui-default.js"></script>
+    <script src="../demo/dist/photoswipe.min.js"></script>
+</head>
+
+<body>
+    <div class="productDetails">
+        <div class="top">
+            <div class="swiper-container">
+                <div class="swiper-wrapper demo-gallery" data-pswp-uid="1">
+                    <!-- <div class="swiper-slide">
+                        <div id="demo-test-gallery" class="demo-gallery" data-pswp-uid="1">
+                            <a href="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg"
+                                data-size="1600x1600"
+                                data-med="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg"
+                                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                                <img src="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg" alt="">
+                                <figure></figure>
+                            </a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="swiper-slide">
+                        <a href="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg" data-size="1600x1600"
+                            data-med="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg"
+                            data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                            <img src="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg" alt="">
+                            <figure></figure>
+                        </a>
+                    </div> -->
+                    <a class="swiper-slide" href="http://192.168.31.119:5500/img/01.jpg"
+                        data-size="1600x1600"
+                        data-med="http://192.168.31.119:5500/img/01.jpg"
+                        data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                        <img src="http://192.168.31.119:5500/img/01.jpg" alt="">
+                        <figure></figure>
+                    </a>
+                    <a class="swiper-slide"
+                        href="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg"
+                        data-size="1600x1600"
+                        data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg"
+                        data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                        <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" alt="">
+                        <figure></figure>
+                    </a>
+                    <a class="swiper-slide"
+                        href="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg"
+                        data-size="1600x1600"
+                        data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg"
+                        data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                        <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" alt="">
+                        <figure></figure>
+                    </a>
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+
+    </div>
+    <div class="center">
+        <!-- 商品编号、分享 -->
+        <div class="product">
+            <div class="name">TOP1678</div>
+            <div class="shareAndCollect">
+                <div class="share">
+                    <img src="./img/share.svg" alt="">
+                    <div>分享</div>
+                </div>
+            </div>
+        </div>
+        <!-- 分割线 -->
+        <div class="cut-offRule">
+            <div class="cut">
+                <div class="cuts">
+                    <div><img src="./img/√.svg" alt=""></div>
+                    <div>品牌制造商直供</div>
+                </div>
+                <div class="cuts">
+                    <div><img src="./img/√.svg" alt=""></div>
+                    <div>线下真实体验</div>
+                </div>
+                <div class="cuts">
+                    <div><img src="./img/√.svg" alt=""></div>
+                    <div>三年质保 终生维护</div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品参数 -->
+        <div class="commodityParameters">
+            <div class="parameters">商品参数</div>
+            <!-- 介绍 -->
+        </div>
+        <div class="introduce">
+            <div class="introduce">
+                <div><img src="./img/model.svg" alt=""></div>
+                <div>型号：TOP1678</div>
+            </div>
+            <div class="introduce">
+                <div><img src="./img/materials.svg" alt=""></div>
+                <div>材质：冰丝提花复合面料</div>
+            </div>
+            <div class="introduce">
+                <div><img src="./img/funnel.svg" alt=""></div>
+                <div>系列：CK系列</div>
+            </div>
+        </div>
+        <!-- 图片 -->
+        <div class="productImg">
+            <div class="parametersText">商品详情图</div>
+            <div id="demo-test-gallery" class="demo-gallery" data-pswp-uid="1">
+                <a href="https://farm4.staticflickr.com/3902/14985871946_24f47d4b53_h.jpg" data-size="1600x1600"
+                    data-med="https://farm4.staticflickr.com/3902/14985871946_24f47d4b53_h.jpg"
+                    data-med-size="1024x1024" data-author="Samuel Rohl">
+                    <img src="https://farm4.staticflickr.com/3902/14985871946_24f47d4b53_h.jpg" alt="">
+                    <figure></figure>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 长图 -->
+    <div class="LongFigure">
+        <div class="longfigureText">商品细节图</div>
+        <div id="demo-test-gallery" class="demo-gallery" data-pswp-uid="1">
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" alt="">
+                <figure></figure>
+            </a>
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" alt="">
+                <figure></figure>
+            </a>
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" alt="">
+                <figure></figure>
+            </a>
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" alt="">
+                <figure></figure>
+            </a>
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" alt="">
+                <figure></figure>
+            </a>
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" alt="">
+                <figure></figure>
+            </a>
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" alt="">
+                <figure></figure>
+            </a>
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" alt="">
+                <figure></figure>
+            </a>
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e0afaacee5bd8437c43566fe7a98aa4f.jpg" alt="">
+                <figure></figure>
+            </a>
+            <a href="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" data-size="1600x1600"
+                data-med="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg"
+                data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+                <img src="http://img2.lixiantuce.com/yjj/1828/pdt/e738e4aed3fb9a510d7f7a48a18a8c09.jpg" alt="">
+                <figure></figure>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="pswp__item" style="display: block; transform: translate3d(-1049px, 0px, 0px);">
+                    <div class="pswp__zoom-wrap" style="transform: translate3d(0px, 156px, 0px) scale(1);"><img
+                            class="pswp__img" src="https://farm6.staticflickr.com/5584/14985868676_b51baa4071_h.jpg"
+                            style="opacity: 1; width: 937px; height: 625px;"></div>
+                </div>
+                <div class="pswp__item" style="transform: translate3d(0px, 0px, 0px);">
+                    <div class="pswp__zoom-wrap" style="transform: translate3d(533.5px, 163px, 0px) scale(0.182497);">
+                        <img class="pswp__img pswp__img--placeholder"
+                            src="https://farm4.staticflickr.com/3920/15008465772_383e697089_m.jpg"
+                            style="width: 937px; height: 625px; display: none;"><img class="pswp__img"
+                            src="https://farm4.staticflickr.com/3920/15008465772_d50c8f0531_h.jpg"
+                            style="display: block; width: 937px; height: 625px;"></div>
+                </div>
+                <div class="pswp__item" style="display: block; transform: translate3d(1049px, 0px, 0px);">
+                    <div class="pswp__zoom-wrap" style="transform: translate3d(0px, 0px, 0px) scale(1);"><img
+                            class="pswp__img" src="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg"
+                            style="opacity: 1; width: 937px; height: 937px;"></div>
+                </div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <div class="pswp__counter">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">5/5</font>
+                        </font>
+                    </div>
+                    <!-- 
+                    <button class="pswp__button pswp__button--close" title="关闭（Esc）"></button>
+
+                    <button class="pswp__button pswp__button--share pswp__element--disabled" title="分享"></button>
+
+                    <button class="pswp__button pswp__button--fs pswp__element--disabled" title="切换全屏"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="放大/缩小"></button> -->
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap pswp__element--disabled">
+                    <div class="pswp__share-tooltip">
+                        <!-- <a href="#" class="pswp__share--facebook"></a>
+                                <a href="#" class="pswp__share--twitter"></a>
+                                <a href="#" class="pswp__share--pinterest"></a>
+                                <a href="#" download class="pswp__share--download"></a> -->
+                    </div>
+                </div>
+
+                <!-- <button class="pswp__button pswp__button--arrow--left" title="上一个（向左箭头）"> </button></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="下一个（向右箭头）"></button> -->
+                <div class="pswp__caption pswp__element--disabled">
+                    <div class="pswp__caption__center">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 3000, //可选选项，自动滑动
+        speed: 2000, //过度时间
+        // loop: true, //可选选项，开启循环
+        // loopAdditionalSlides : 0,//loop模式下会在slides前后复制若干个slide
+        // autoplayDisableOnInteraction : false,//用户操作swiper之后，是否禁止autoplay。
+        autoplayDisableOnInteraction: false, //设置为false，用户操作swiper之后自动切换不会停止
+        calculateHeight: true,
+        pagination: '.pagination', //分页按钮
+        paginationClickable: true, //分页器
+        slideElement: 'a', //设置slide的html标签
+        onSlideChangeEnd: function (swiper) {
+            if (mySwiper.activeIndex == 2) {
+                mySwiper.swipeTo(0, 1000, false);
+            }
+
+        }
+        //     // swiper.slideTo(0, 1000, false)
+        //     // 第一个参数是指定切换到某一页的索引；第二个参数是切换速度；第三个参数是布尔值，表示是否要触发onSlideChange回调函数；
+    })
+</script>
+<script type="text/javascript">
+    (function () {
+
+        var initPhotoSwipeFromDOM = function (gallerySelector) {
+
+            var parseThumbnailElements = function (el) {
+                var thumbElements = el.childNodes,
+                    numNodes = thumbElements.length,
+                    items = [],
+                    el,
+                    childElements,
+                    thumbnailEl,
+                    size,
+                    item;
+
+                for (var i = 0; i < numNodes; i++) {
+                    el = thumbElements[i];
+                    if (el.nodeType !== 1) {
+                        continue;
+                    }
+                    childElements = el.children;
+                    size = el.getAttribute('data-size').split('x');
+                    item = {
+                        src: el.getAttribute('href'),
+                        w: parseInt(size[0], 10),
+                        h: parseInt(size[1], 10),
+                        author: el.getAttribute('data-author')
+                    };
+                    item.el = el;
+                    if (childElements.length > 0) {
+                        item.msrc = childElements[0].getAttribute('src');
+                        if (childElements.length > 1) {
+                            item.title = childElements[1].innerHTML;
+                        }
+                    }
+                    var mediumSrc = el.getAttribute('data-med');
+                    if (mediumSrc) {
+                        size = el.getAttribute('data-med-size').split('x');
+                        item.m = {
+                            src: mediumSrc,
+                            w: parseInt(size[0], 10),
+                            h: parseInt(size[1], 10)
+                        };
+                    }
+                    item.o = {
+                        src: item.src,
+                        w: item.w,
+                        h: item.h
+                    };
+
+                    items.push(item);
+                }
+                return items;
+            };
+            var closest = function closest(el, fn) {
+                return el && (fn(el) ? el : closest(el.parentNode, fn));
+            };
+            var onThumbnailsClick = function (e) {
+                e = e || window.event;
+                e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+                var eTarget = e.target || e.srcElement;
+
+                var clickedListItem = closest(eTarget, function (el) {
+                    return el.tagName === 'A';
+                });
+
+                if (!clickedListItem) {
+                    return;
+                }
+                var clickedGallery = clickedListItem.parentNode;
+
+                var childNodes = clickedListItem.parentNode.childNodes,
+                    numChildNodes = childNodes.length,
+                    nodeIndex = 0,
+                    index;
+                for (var i = 0; i < numChildNodes; i++) {
+                    if (childNodes[i].nodeType !== 1) {
+                        continue;
+                    }
+                    if (childNodes[i] === clickedListItem) {
+                        index = nodeIndex;
+                        break;
+                    }
+                    nodeIndex++;
+                }
+                if (index >= 0) {
+                    openPhotoSwipe(index, clickedGallery);
+                }
+                return false;
+            };
+            var photoswipeParseHash = function () {
+                var hash = window.location.hash.substring(1),
+                    params = {};
+
+                if (hash.length < 5) {
+                    return params;
+                }
+                var vars = hash.split('&');
+                for (var i = 0; i < vars.length; i++) {
+                    if (!vars[i]) {
+                        continue;
+                    }
+                    var pair = vars[i].split('=');
+                    if (pair.length < 2) {
+                        continue;
+                    }
+                    params[pair[0]] = pair[1];
+                }
+                if (params.gid) {
+                    params.gid = parseInt(params.gid, 10);
+                }
+                return params;
+            };
+            var openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
+                var pswpElement = document.querySelectorAll('.pswp')[0],
+                    gallery,
+                    options,
+                    items;
+
+                items = parseThumbnailElements(galleryElement);
+                options = {
+                    galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+                    getThumbBoundsFn: function (index) {
+                        var thumbnail = items[index].el.children[0],
+                            pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                            rect = thumbnail.getBoundingClientRect();
+
+                        return {
+                            x: rect.left,
+                            y: rect.top + pageYScroll,
+                            w: rect.width
+                        };
+                    },
+                    addCaptionHTMLFn: function (item, captionEl, isFake) {
+                        if (!item.title) {
+                            captionEl.children[0].innerText = '';
+                            return false;
+                        }
+                        captionEl.children[0].innerHTML = item.title + '<br/><small>Photo: ' + item
+                            .author + '</small>';
+                        return true;
+                    },
+                };
+                if (fromURL) {
+                    if (options.galleryPIDs) {
+                        for (var j = 0; j < items.length; j++) {
+                            if (items[j].pid == index) {
+                                options.index = j;
+                                break;
+                            }
+                        }
+                    } else {
+                        options.index = parseInt(index, 10) - 1;
+                    }
+                } else {
+                    options.index = parseInt(index, 10);
+                }
+                if (isNaN(options.index)) {
+                    return;
+                }
+                options.mainClass = 'pswp--minimal--dark';
+                options.barsSize = {
+                    top: 0,
+                    bottom: 0
+                };
+                options.captionEl = false;
+                options.fullscreenEl = false;
+                options.shareEl = false;
+                options.bgOpacity = 1;
+                options.tapToClose = true;
+                options.tapToToggleControls = false;
+                options.hideAnimationDuration = 0;
+                if (disableAnimation) {
+                    options.showAnimationDuration = 0;
+                }
+                gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+                var realViewportWidth,
+                    useLargeImages = false,
+                    firstResize = true,
+                    imageSrcWillChange;
+
+                gallery.listen('beforeResize', function () {
+                    var dpiRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
+                    dpiRatio = Math.min(dpiRatio, 2.5);
+                    realViewportWidth = gallery.viewportSize.x * dpiRatio;
+                    if (realViewportWidth >= 1200 || (!gallery.likelyTouchDevice &&
+                            realViewportWidth > 800) || screen.width > 1200) {
+                        if (!useLargeImages) {
+                            useLargeImages = true;
+                            imageSrcWillChange = true;
+                        }
+                    } else {
+                        if (useLargeImages) {
+                            useLargeImages = false;
+                            imageSrcWillChange = true;
+                        }
+                    }
+                    if (imageSrcWillChange && !firstResize) {
+                        gallery.invalidateCurrItems();
+                    }
+                    if (firstResize) {
+                        firstResize = false;
+                    }
+                    imageSrcWillChange = false;
+                });
+                gallery.listen('gettingData', function (index, item) {
+                    if (useLargeImages) {
+                        item.src = item.o.src;
+                        item.w = item.o.w;
+                        item.h = item.o.h;
+                    } else {
+                        item.src = item.m.src;
+                        item.w = item.m.w;
+                        item.h = item.m.h;
+                    }
+                });
+                gallery.init();
+            };
+            var galleryElements = document.querySelectorAll(gallerySelector);
+            for (var i = 0, l = galleryElements.length; i < l; i++) {
+                galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                galleryElements[i].onclick = onThumbnailsClick;
+            }
+            var hashData = photoswipeParseHash();
+            if (hashData.pid && hashData.gid) {
+                openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+            }
+        };
+
+        initPhotoSwipeFromDOM('.demo-gallery');
+
+    })();
+</script>
+
+</html>

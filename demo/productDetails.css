@@ -1,0 +1,154 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    width: 100%;
+    /* height: 240px; */
+    /* background-color: #ccc; */
+}
+
+.top img {
+    /* height: 240px; */
+    height: 16rem;
+    width: 100%;
+}
+
+.pagination {
+    position: absolute;
+    z-index: 20;
+    top: 220px;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-pagination-switch {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #555;
+    margin: 0 5px;
+    opacity: 0.8;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.swiper-active-switch {
+    background: #fff;
+}
+
+.center {
+    background-color: #eee;
+}
+
+.product {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px 20px 30px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.shareAndCollect {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+}
+
+.cut-offRule {
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+.cut {
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.7rem;
+}
+.cuts{
+    display: flex;
+}
+.commodityParameters {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.parameters,.parametersText {
+    font-weight: bolder;
+    padding: 10px 0;
+}
+.parametersText{
+    background-color: #fff;
+    margin-top: 10px;
+    padding-left: 18px;
+}
+.introduce {
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: space-around;
+    padding: 0 0 0.5rem ;
+    background-color: #fff ;
+}
+.introduce img{
+    margin-right: 0.5rem;
+}
+.productImg img {
+    width: 100%;
+}
+
+.LongFigure {
+    margin-bottom: 2rem;
+    text-align: left;
+    font-weight: bolder;
+    background: #eee;
+    padding-top: 10px;
+}
+.longfigureText{
+    line-height: 2rem;
+    padding: 0 20px;
+    background-color: #fff;
+}
+.productImg{
+    margin-bottom: 2rem;
+}
+
+#demo-test-gallery{
+    width: 100%;
+}
+
+#demo-test-gallery img{
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.pswp__counter{
+    margin-left: 160px;
+}
+.share{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+}
+.share img{
+    width: 50%;
+    margin-bottom: 13px;
+    margin-right: 0.5rem;
+}
+.share div{
+    width: 75%;
+    text-align: center;
+}
